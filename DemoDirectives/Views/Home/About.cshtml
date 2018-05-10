@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="valid">
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css">
+    <link href="~/Js/ng-tags-input.min.css" rel="stylesheet" />
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Js/ng-tags-input.min.js"></script>
+    <script src="~/Js/Validation.js"></script>
+</head>
+<body ng-controller="validation">
+    <tags-input ng-model="numbers"
+                placeholder="Add Numbers"
+                min-length="1"
+                max-length="4"
+                allowed-tags-pattern="^[0-9]+$">
+    </tags-input>
+    <p>Model: {{numbers}}</p>
+</body>
+</html>

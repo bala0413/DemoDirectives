@@ -1,0 +1,27 @@
+﻿<html ng-app="demod">
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS SuperHeroes</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css">
+    <link href="~/Js/ng-tags-input.min.css" rel="stylesheet" />
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Js/ng-tags-input.min.js"></script>
+    <script src="~/Js/app2.js"></script>
+</head>
+<body ng-controller="Super">
+    <tags-input ng-model="superheroes"
+                placeholder="Add a superhero"
+                replace-spaces-with-dashes="false"
+                add-from-autocomplete-only="true"
+                on-tag-added="added($tag)"
+                on-tag-removed="removed($tag)">
+        <auto-complete source="loadSuperheroes($query)"
+                       min-length="0"
+                       debounce-delay="0"
+                       max-results-to-show="11"></auto-complete>
+    </tags-input>
+    <p>Model: {{superheroes}}</p>
+    <p>Log: {{log}}</p>
+</body>
+</html>

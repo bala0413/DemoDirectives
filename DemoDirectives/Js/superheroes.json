@@ -1,13 +1,14 @@
 ﻿[
-  "Adam Strange",
-  "Ant-Man",
-  "Aquaman",
-  "Batman",
-  "Beast",
-  "Black Panther",
-  "Blade",
-  "Thor",
-  "Wasp",
-  "Wolverine",
-  "Wonder Woman"
+  { "text": "Adam Strange" },
+  { "text": "Ant-Man" },
+  { "text": "Aquaman" },
+  { "text": "Batman" },
+  { "text": "Beast" },
+  { "text": "Black Panther" },
+  { "text": "Blade" },
+  { "text": "Thor" },
+  { "text": "Wasp" },
+  { "text": "Wolverine" },
+  { "text": "Wonder Woman" }
+  
 ]

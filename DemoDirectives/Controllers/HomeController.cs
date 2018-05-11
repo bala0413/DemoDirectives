@@ -30,5 +30,10 @@ namespace DemoDirectives.Controllers
         {
             return View();
         }
+
+        public ActionResult Dropdown()
+        {
+            return View();
+        }
     }
 }

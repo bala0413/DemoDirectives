@@ -13,7 +13,13 @@
         <script src="~/Js/app.js"></script>
     </head>
     <body ng-controller="MainCtrl">
-        <tags-input ng-model="tags"></tags-input>
+        <h1>&nbsp; </h1>
+        <tags-input ng-model="tags"  use-strings="true"></tags-input>
         <p>Model: {{tags}}</p>
+
+        <tags-input ng-model="names" use-strings="true">
+            <auto-complete source="loadNames($query)"  min-length='1'></auto-complete>
+        </tags-input>
+        <span>Model: {{names}}</span>
     </body>
     </html>

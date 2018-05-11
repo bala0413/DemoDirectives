@@ -6,4 +6,18 @@ app.controller('MainCtrl', function ($scope, $http) {
         { text: 'Vicky' },
         { text: 'BalaVicky' }
     ];
+
+
+    $scope.names = [
+        { text: 'bala' },
+        { text: 'chandran' },     
+        { text: 'bala chandran' }
+    ];
+
+
+    $scope.loadNames = function (query) {
+        return $http.get('/Js/superheroes.json');
+    };   
+
 });
+//Tag: $scope.tags.toString(),

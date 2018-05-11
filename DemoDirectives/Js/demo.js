@@ -142,7 +142,6 @@ app.controller('DemoCtrl', function ($scope, $http, $timeout, $interval) {
         { name: 'Adrian', email: 'adrian@email.com', age: 21, country: 'Ecuador' },
     ];
 
-
     vm.availableColors = ['Red', 'Green', 'Blue', 'Yellow', 'Magenta', 'Maroon', 'Umbra', 'Turquoise'];
 
    // vm.singleDemo = {};

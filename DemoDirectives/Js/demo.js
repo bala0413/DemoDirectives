@@ -109,30 +109,30 @@ app.controller('DemoCtrl', function ($scope, $http, $timeout, $interval) {
     //    };
     //};
 
-    //vm.tagTransform = function (newTag) {
-    //    var item = {
-    //        name: newTag,
-    //        email: newTag.toLowerCase() + '@email.com',
-    //        age: 'unknown',
-    //        country: 'unknown'
-    //    };
+    vm.tagTransform = function (newTag) {
+        var item = {
+            name: newTag,
+            email: newTag.toLowerCase() + '@email.com',
+            age: 'unknown',
+            country: 'unknown'
+        };
 
-    //    return item;
-    //};
+        return item;
+    };
 
-    //vm.peopleObj = {
-    //    '1': { name: 'Adam', email: 'adam@email.com', age: 12, country: 'United States' },
-    //    '2': { name: 'Amalie', email: 'amalie@email.com', age: 12, country: 'Argentina' },
-    //    '3': { name: 'Estefanía', email: 'estefania@email.com', age: 21, country: 'Argentina' },
-    //    '4': { name: 'Adrian', email: 'adrian@email.com', age: 21, country: 'Ecuador' },
-    //};
+    vm.peopleObj = {
+        '1': { name: 'Adam', email: 'adam@email.com', age: 12, country: 'United States' },
+        '2': { name: 'Amalie', email: 'amalie@email.com', age: 12, country: 'Argentina' },
+        '3': { name: 'Estefanía', email: 'estefania@email.com', age: 21, country: 'Argentina' },
+        '4': { name: 'Adrian', email: 'adrian@email.com', age: 21, country: 'Ecuador' },
+    };
 
-    //vm.person = {};
+    vm.person = {};
 
-    //vm.person.selectedValue = vm.peopleObj[3];
-    //vm.person.selectedSingle = 'Estefanía';
-    //vm.person.selectedSingleKey = '2';
-    //// To run the demos with a preselected person object, uncomment the line below.
+    vm.person.selectedValue = vm.peopleObj[3];
+    vm.person.selectedSingle = 'Estefanía';
+    vm.person.selectedSingleKey = '2';
+    // To run the demos with a preselected person object, uncomment the line below.
     //vm.person.selected = vm.person.selectedValue;
 
     vm.people = [
@@ -184,12 +184,12 @@ app.controller('DemoCtrl', function ($scope, $http, $timeout, $interval) {
     //    });
     //};
 
-    //vm.addPerson = function (item, model) {
-    //    if (item.hasOwnProperty('isTag')) {
-    //        delete item.isTag;
-    //        vm.people.push(item);
-    //    }
-    //}
+    vm.addPerson = function (item, model) {
+        if (item.hasOwnProperty('isTag')) {
+            delete item.isTag;
+            vm.people.push(item);
+        }
+    }
 
     //vm.country = {};
     //vm.countries = [ // Taken from https://gist.github.com/unceus/6501985

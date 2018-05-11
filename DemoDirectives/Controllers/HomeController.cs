@@ -35,5 +35,10 @@ namespace DemoDirectives.Controllers
         {
             return View();
         }
+
+        public ActionResult Bind()
+        {
+            return View();
+        }
     }
 }
